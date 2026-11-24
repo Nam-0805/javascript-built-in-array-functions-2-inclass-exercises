@@ -7,7 +7,14 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ด้านล่าง
 */
 
-// Start coding here
+function findIfItemExist (products, productName) {
+    if (products.includes(productName)) {
+        return `พบ ${productName} ในรายการสินค้า`;
+    }
+    else {
+        return `ไม่พบ ${productName} ในรายการสินค้า`;
+    }
+}
 
 const products = ["milk", "bread", "eggs", "butter", "cheese", "orange juice"];
 
